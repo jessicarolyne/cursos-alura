@@ -1,17 +1,20 @@
 import styled from "styled-components";
-import inputText from "../inputText";
+import InputText from "../inputText";
 
-const headerEstilizado = styled.header`
+const HeaderEstilizado = styled.header`
  padding : 60px 0;
  display: flex;
  justify-content: space-between;
+ img {
+  max-width: 212px;
+ }
 `
 const Header = () => {
   return(
-    <headerEstilizado>
+    <HeaderEstilizado>
       <img src="/imagens/logo.png" alt="Logo" />
-      <inputText />
-    </headerEstilizado>
+      <InputText />
+    </HeaderEstilizado>
   )
 }
 export default Header;

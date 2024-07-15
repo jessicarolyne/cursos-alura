@@ -4,7 +4,8 @@ import search from './search.png'
 const ContainerEstilizado = styled.div`
     position: relative;
     display: inline-block;
-`
+`;
+
 
 const InputTextEstilizado = styled.input`
     height: 56px;
@@ -29,13 +30,13 @@ const IconeLupa = styled.img`
     height: 38px;
 `;
 
-const inputText = (props) => {
+const InputText = (props) => {
     return (
         <ContainerEstilizado>
-            <InputTextEstilizado placeholder="O que você procura?" {...props} />
+            <InputTextEstilizado {...props} />
             <IconeLupa src={search} alt="ícone de lupa" />
         </ContainerEstilizado>
     )
 }
 
-export default inputText;
+export default InputText;
